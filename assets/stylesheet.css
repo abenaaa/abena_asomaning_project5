@@ -1,0 +1,446 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* End of reset */
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Clearfix */
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+/* End of Clearfix */
+
+/*Typography*/
+
+body {
+  font-family: 'Amatica SC', cursive;
+  background-color: #222222;
+}
+
+h1 {
+  font-size: 160px;
+  color: #ef8815;
+  display: inline;
+  font-family: 'Alex Brush', cursive;
+  text-align: center;
+  text-shadow: 3px 3px 5px #222222;
+}
+
+.kubby {
+  font-size: 85px;
+  color: #ef6215;
+  display: inline;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 5px 5px 5px #888888;
+}
+
+.the.kubby {
+  font-size: 45px;
+  text-shadow: none;
+}
+
+h3 {
+  font-size: 40px;
+  color: #4d6613;
+  text-align: center;
+  padding-top: 30px;
+}
+
+h2 {
+  font-size: 50px;
+  color: #ef6215;
+  font-weight: 700;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+h2.description {
+  display: inline;
+}
+
+.description-right {
+  font-size: 50px;
+  color: #0eac67;
+  display: inline;
+  padding-bottom: 30px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  color: #2b4915;
+  font-size: 20px;
+  display: inline;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+p {
+  font-size: 15px;
+  color: #ffffe6;
+  font-family: 'Lato', sans-serif;
+}
+
+li {
+  font-size: 20px;
+  color: #ffffe6;
+  font-family: 'Lato', sans-serif;
+  line-height: 24px;
+}
+
+h6 {
+  color: #2b4915;
+  font-family: 'Lato', sans-serif;
+  display: inline;
+}
+
+hr {
+  border: 2px solid;
+  border-color: #0eac67;
+  width: 30%;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+/*Structures*/
+
+.main-top {
+  background: url(images/seventeen.jpg) top center no-repeat;
+  max-width: 1290px;
+  margin: 0 auto;
+}
+
+.main-heading {
+  margin: 0 auto;
+  max-width: 1290px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.color-splash {
+  background-color: #ef6215;
+  height: 10px;
+  max-width: 1290px;
+  margin: 0 auto;
+}
+
+.main-heading-inside {
+  margin: 0 auto;
+  background-color: #fffff3;
+  opacity: 0.8;
+  max-width: 1290px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  text-align:center;
+}
+
+.user-data {
+  background-color: #ef8815;
+  max-width:1290px;
+  margin: 0 auto;
+  padding:30px;
+}
+
+.flexContainer {
+  display:flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.select-one, .select-two, .select-three, .select-four, .select-submit  {
+  max-width:100px;
+}
+
+.main-background {
+  background: url(images/thirteen.jpg) top center no-repeat;
+  margin: 0 auto;
+  max-width: 1290px;
+  max-height: 800px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+.branding-left {
+  opacity: 0.5;
+  width: 15%;
+  height: 450px;
+  padding:30px;
+}
+
+.recipeResults {
+  background-color: #2b4915;
+  opacity: 0.8;
+  width: 60%;
+  height: 450px;
+  overflow: auto;
+  padding:30px;
+}
+
+.resultImage {
+  padding-top: 20px;
+}
+
+.box-title {
+  margin:0 auto;
+  text-align: center;
+}
+
+.logo {
+  width: 300px;
+}
+
+.branding-right {
+  opacity: 0.8;
+  width: 15%;
+  height: 450px;
+  padding:30px;
+}
+
+/*Footer*/
+
+footer {
+  background-color: #0eac67;
+  height: auto;
+  max-width: 1290px;
+  margin: 0 auto;
+  padding:30px;
+  padding-bottom: 60px;
+}
+
+.copyright {
+width: 70%;
+}
+
+.social-media-icons {
+width: 20%;
+}
+
+.yummly-logo {
+  max-width: 80px;
+  padding-left: 10px;
+}
+
+/* Sign-up Form */
+
+#protein, #carb, #veggie {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: 'Amatica SC', cursive;
+  color: #222222;
+}
+
+ #submit, .sub-menu {
+  background-color: #fffff3;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: 'Amatica SC', cursive;
+  color: #222222;
+ }
+
+
+ /* Query 1*/
+ @media (min-width: 760px) and (max-width: 940px) {
+
+  h1 {
+    font-size: 100px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+  .recipeResults {
+    width: 720px;
+  }
+
+  .logo {
+    max-width: 600px;
+  }
+
+  .branding-right {
+    width: 0px;
+  }
+
+  .branding-left {
+    width: 0px;
+  }
+ }
+
+  /* Query 2*/
+@media (min-width: 480px) and (max-width: 760px) {
+
+  h1 {
+    font-size: 70px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+  #protein, #carb, #veggie {
+    font-size: 8px;
+  }
+
+   #submit, .sub-menu {
+    font-size: 8px;
+  }
+
+ .select-one, .select-two, .select-three, .select-four, .select-submit  {
+   max-width:10%;
+   padding-right: 10px;
+  }
+
+  .recipeResults {
+    width: 480px;
+  }
+
+  .logo {
+    max-width: 200px;
+  }
+
+  .branding-right {
+    width: 0px;
+  }
+
+  .branding-left {
+    width: 0px;
+  }
+
+  .twitter-share-button, .yummly-logo {
+    margin-top: 15px;
+  }
+
+}
+
+/* Query 3*/
+
+@media (min-width: 0px) and (max-width: 480px) {
+
+    h1 {
+      font-size: 70px;
+    }
+
+    h5 {
+      font-size: 18px;
+    }
+
+    #protein, #carb, #veggie {
+      font-size: 8px;
+    }
+
+     #submit, .sub-menu {
+      font-size: 8px;
+    }
+
+   .select-one, .select-two, .select-three, .select-four, .select-submit  {
+     max-width:10%;
+     padding-right: 10px;
+    }
+
+    .recipeResults {
+      width: 440px;
+    }
+
+    .logo {
+      max-width: 60px;
+    }
+
+    .branding-right {
+      width: 0px;
+    }
+
+    .branding-left {
+      width: 0px;
+    }
+
+    .twitter-share-button, .yummly-logo {
+      margin-top: 10px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 460px) {
+
+  h1 {
+    font-size: 50px;
+  }
+
+  h5 {
+    font-size: 15px;
+  }
+}

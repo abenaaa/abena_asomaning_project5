@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--Style Sheet-->
+	<link rel="stylesheet" type="text/css" href="assets/stylesheet.css">
+	<!-- Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'>
+
+	<link href='https://fonts.googleapis.com/css?family=Amatica+SC:400,700' rel='stylesheet' type='text/css'>
+
+	<link href='https://fonts.googleapis.com/css?family=Amatica+SC:700|Lato:400,100italic,300' rel='stylesheet' type='text/css'>
+
+	<title>Kitchen Kubby App - Generate Custom Meal Ideas!</title>
+</head>
+<body>
+	<header>
+
+		<div class="main-top">
+	    	<div class="main-heading">
+	    		<img src="assets/images/logo.png" class="logo"><br>
+		    	<h1>Kitchen</h1>&nbsp;&nbsp;&nbsp;&nbsp;<h1>Kubby</h1>
+		    </div>
+
+			<div class="main-heading-inside">
+		    	<h2 class="description">A SELECTION OF</h2>
+		    	<span class="description-right">&nbsp;&nbsp;DELICIOUS MEAL IDEAS</span>
+		    	<h3>Not sure what to make for dinner? Don't know what to put on your grocery list? Fill out the fields below. Start with foods that are already in the fridge! And we'll inspire you with a selection of delicious meal ideas, RATED FROM 1-5.</h3><h3>Try it out!</h3>
+	    	</div>
+
+		</div>
+
+		<container class="user-data flexContainer">
+			<div class="select-one">
+				<form id="searchForm">
+	    		<input type="search" name="searchTermOne"
+	    		placeholder="Choose a protein" id="protein">
+			</div>
+
+			<div class="select-two">
+	    		<input type="search" name="searchTermTwo" placeholder="Choose a carb" id="carb">
+			</div>
+
+			<div class="select-three">
+		    	<input type="search" name="searchTermThree" placeholder="Choose a veggie" id="veggie">
+			</div>
+
+			<div class="select-four">
+				<select class="sub-menu">
+					<option value="">Allergies</option>
+					<option value="">None</option>
+					<option value="peanut">Peanut</option>
+					<option value="gluten">Gluten</option>
+					<option value="soy">Soy</option>
+					<option value="dairy">Dairy</option>
+				</select>
+			</div>
+
+			<div class="select-submit">
+	    		<input type="submit" id="submit">
+			</div>
+				</form>
+		</container>
+		<div class="color-splash"></div>
+	</header>
+
+	<container>
+		<div class="main-background flexContainer">
+			<div class="branding-left">
+			</div>
+
+			<div class="recipeResults">
+				<div class="box-title">
+					<span class="description-right">SHOW ME MY RESULTS...</span>
+					<img class="resultImage">
+				</div>
+				<hr>
+			</div>
+
+			<div class="branding-right">
+			</div>
+		</div>
+	</container>
+
+	<footer class="flexContainer">
+		<div class="copyright">
+			<h5>Coded and Designed by Abena Asomaning &copy; 2016. All Rights Reserved. API Data provided by</h5>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.yummly.com/" target=_blank><img src="assets/images/yummly.png" class="yummly-logo"></a>
+		</div>
+		<div class="social-media-icons">
+			<h5>TELL YO' MAMA!</h5>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="abenaasomaning.com">Tweet</a>
+
+		</div>
+	</footer>
+
+
+<!-- Scripts -->
+	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="recipePicker.js"></script>
+</body>
+</html>
+
